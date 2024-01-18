@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*background-image: url("../assets/bg1.png");*/
+    background-color: chocolate; /* Dark mode background */
+    color: #fff; /* Text color set to white */
+    overflow: hidden; /* Hide overflow to prevent horizontal scrolling */
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+}
+
+.main-content h1{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 22%; 
+}
+.logo {
+    position: absolute;
+    top: 55%;
+    left: 22%; /* Adjust the left positioning */
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: fadeInLogo 1s forwards; /* Adjust the duration as needed */
+    width: 50%;
+    height: 70%;
+}
+
+@keyframes fadeInLogo {
+    to {
+        opacity: 1;
+    }
+}
+
+.tile-card {
+    width: 55%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -50%;
+    /*background: linear-gradient(to right, rgba(24, 32, 51, 0) 0%, #142f41 50%); /* Added linear gradient for transparency */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0);
+    animation: slideInCard 1s forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.registration-container {
+    height: 100%; /* Set the desired height */
+    width: 100%;
+    overflow-y: auto; /* Enable vertical scrollbar if needed */
+}
+
+.tile-card h2 {
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tile-card form {
+    width: 80%; /* Adjust the width of the form as needed */
+    margin: 0 auto;
+}
+
+.tile-card label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.tile-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.tile-card input[type="submit"] {
+    width: calc(105%); /* Adjust the width to leave some margin on each side */
+    background-color: #d19629;
+    color: #000000;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.tile-card input[type="submit"]:hover {
+    background-color: #f1b856;
+}
+
+
+@keyframes slideInCard {
+    to {
+        right: 0;
+    }
+}
+
+.main-content {
+    width: 30%; /* Covering 100% of the screen horizontally */
+    padding: 20px; /* Add padding as needed */
+    margin-top: 10%;
+    margin-left: 7%;
+}
+
+
+.fade-in {
+    animation: fade-in 2s ease-in-out forwards; /* Adjust the duration as needed */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Add this to your existing CSS or create a new style tag in the head section */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Add this to your existing CSS or create a new style tag in the head section */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.error-box {
+    background-color: #ff6961; /* Light red background color for errors */
+    color: #fff; /* Text color set to white */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.error-message {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+

@@ -1,0 +1,73 @@
+/* style_index.css */
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.page {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.page h2{
+    padding: 10px;
+}
+.notverified {
+    background-color: rgb(208, 75, 75);
+    color: white;
+}
+
+.verification-message {
+    /* Styles for the verification message */
+    padding: 10px;
+    background-color: #ffcccc;
+    color: #800000;
+    border-radius: 5px;
+}
+
+/* Additional styles for event boxes */
+.upcoming-events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minmax values based on your preference */
+    gap: 20px; /* Adjust the gap between event boxes */
+    padding-left: 10px;
+    
+}
+.event-link {
+    text-decoration: none; /* Remove underlines for anchor tags */
+    color: inherit; /* Inherit text color */
+}
+
+.event-box {
+    border: 1px solid #ddd; /* Add border for visual separation */
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.event-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+/* Styles for the index image */
+.index-image-container {
+    text-align: center;
+}
+
+.index-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}

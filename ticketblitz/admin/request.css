@@ -1,0 +1,56 @@
+/* request_style.css */
+
+/* Add your custom styles here */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.request-info {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    float: left;
+}
+
+.text-details {
+    width: 100%; /* Adjusted to take the full width */
+}
+
+.image-confirm {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    float: right;
+}
+
+img {
+    max-width: 100%; /* Adjusted to take the full width */
+    max-height: 50%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.confirm-button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background-color: #45a049;
+}

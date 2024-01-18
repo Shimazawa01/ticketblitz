@@ -1,0 +1,56 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: solid;
+    border-color: chocolate;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.login-container h2 {
+    color: rgb(0, 0, 0);
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: white;
+    color: chocolate;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}

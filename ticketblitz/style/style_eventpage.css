@@ -1,0 +1,47 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.page {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    overflow-y: scroll; /* Keep the overflow-y property for scrolling */
+    margin-top: 50px; /* Adjust the margin to create space at the top */
+}
+
+.event-details-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.centered-image {
+    display: block;
+    margin: auto;
+}
+
+.details-text {
+    text-align: left; /* Align text to the left */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 600px; /* Set a maximum width for the details-text */
+    float: left;
+    margin-left: 50px;
+}
+
+.buy-tickets-box {
+    background-color: #3498db; /* Example background color, customize as needed */
+    color: #fff; /* Example text color, customize as needed */
+    padding: 10px;
+    margin-top: 20px;
+    width: 30%; /* Take up the full width */
+    box-sizing: border-box; /* Include padding in the width */
+    float: right;
+    margin-right: 50px;
+}
+
